@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale');
+
+:root {
+  --unit: min(1vw, 1vh); /* единая единица масштабирования */
+}
+
+.lepepe {
+  background: #150F0F;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh auto 0;
+  width: calc(var(--unit) * 37);
+  height: clamp(200px, calc(var(--unit) * 25), 320px);
+  font-family: 'Bonheur Royale', cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(40px, calc(var(--unit) * 11), 96px);
+  line-height: 1.15;
+  text-align: center;
+  background-color: #DF8C2C;
+  color: #150F0F;
+  filter: drop-shadow(0px 4px 78.2px #774D1D);
+}
+
+.bbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px auto 0;
+  background: #DF8C2C;
+  width: 232px;
+  height: 75px;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.bbutton:hover{
+    background: transparent;
+    border: 1px solid #DF8C2C;
+    border-radius: 1px;
+    color: #DF8C2C;
+}
+
+.page-wrap{
+    position: relative;
+}
+
+.page{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.page.visible{
+    display: block;
+}
+
+.page.fadein{
+    opacity: 1;
+}
+
+.zuzu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 143px;
+    background: transparent;
+    margin-top: 10px;
+    font-family: 'Bonheur Royale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 5vh;
+    text-align: center;
+    color: #DF8C2C;
+    text-shadow: 0px 4px 53.5px #DF8C2C;
+    letter-spacing: 0.11em;
+
+}
+
+.menu{
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    top: 2vh;
+    right: 1vw;
+    width: 259px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.11em;
+    color: #DF8C2C;
+    transition: all 0.2s ease;
+    -webkit-text-stroke: 1px transparent;
+}
+
+.menu:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px #DF8C2C;
+}
+
+.catalogue-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    border: 3px solid #DF8C2C;
+    border-radius: 1px;
+    gap: 16px;
+    width: 100%;
+    margin: 40px auto 0;
+}
+
+.item{
+    background: #D9B892;
+    width: 30vw;
+    height: 40vh;
+    margin: 10px;
+    color: #150F0F;
+}
